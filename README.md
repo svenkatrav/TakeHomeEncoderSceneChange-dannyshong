@@ -15,12 +15,14 @@ This take-home exercise is designed to assess your ability to implement scene ch
 
 ## Building the Application
 
-To build the application, you will need to have the x264 library and a C++ compiler installed on your system. Follow these steps to compile the application:
+To build the application, you will need to have a C++ compiler installed on your system. Follow these steps to compile the application:
 
-1. Navigate to the root directory of the project in your terminal.
-2. Run the `make` command to build the executable:
+1. Clone the repository and navigate to the root directory of the project in your terminal.
+2. Initialize and update the Git submodules to retrieve `libx264`:
+git submodule update --init --recursive
+3. Run the `make` command to build the executable:
 make
-3. The build process will generate an executable named `yuv_to_h264`.
+4. The build process will generate an executable named `yuv_to_h264`.
 
 ## Running the Application
 
