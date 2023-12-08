@@ -26,10 +26,11 @@ make
 
 After building the application, you can run it by following these steps:
 
-1. Place a YUV file named `big_buck_bunny_720p30.yuv` in the test directory of the project. The file should be in 4:2:0 format with a resolution of 1280x720 pixels.
-2. Run the executable from the terminal:
+1. For initial verification, a short YUV file named `big_buck_bunny_720p30_short.yuv` has been included in the `test` directory. This file is a truncated version of the full video and is suitable for quick tests.
+2. To run the application with the full video, download the YUV file from this [Google Drive link](https://drive.google.com/file/d/13Zjc8h9i0IHkdXTxBlLofaJTN6oZNsi4/view?usp=sharing), and copy it to the `test` directory, replacing the short version.
+3. Run the executable from the terminal:
 ./yuv_to_h264
-3. The encoded output will be written to a file named `big_buck_bunny_720p30.264` in the test directory.
+4. The encoded output will be written to a file named `big_buck_bunny_720p30.264` in the test directory.
 
 ## Implementing Scene Change Detection
 

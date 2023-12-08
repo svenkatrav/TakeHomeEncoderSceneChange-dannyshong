@@ -10,7 +10,7 @@ int main() {
     std::ofstream file_("test/big_buck_bunny_720p30.264", std::ios::binary);
     SceneChangeDetector sceneChangeDetector;
 
-    YuvReader reader("test/big_buck_bunny_720p30.yuv", width, height);
+    YuvReader reader("test/big_buck_bunny_720p30_short.yuv", width, height);
     X264Encoder encoder(width, height);
 
     x264_picture_t pic_in[2];
